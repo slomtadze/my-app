@@ -1,4 +1,4 @@
-button {
+  .button-md {
     width: 250px;
     height: 40px;
     border-radius: 8px;
@@ -7,11 +7,12 @@ button {
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    border: none;
   }
   
-  button:hover {
+  .button-md:hover {
     background-color: #317ad0;
   }
-  button:active {
+  .button-md:active {
     background-color: #1a5dab;
   }

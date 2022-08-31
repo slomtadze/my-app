@@ -1,0 +1,38 @@
+.employee-info,
+.laptop-info {
+    font-family: 'Halvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #232323;
+    text-decoration: none;
+    padding-bottom: 30px;
+    transition: 0.2s;
+}
+
+.employee-info:hover,
+.laptop-info:hover {
+    border-bottom: 2px solid #000000;
+}
+
+
+
+.employee-info {
+    letter-spacing: 0.5px;
+    font-family: 'Halvetica Neue';
+    position: absolute;
+    width: 223px;
+    height: 24px;
+    left: 671px;
+    top: 91px;
+}
+
+.laptop-info {
+    position: absolute;
+    width: 289px;
+    height: 24px;
+    right: 671px;
+    top: 91px;
+}
+

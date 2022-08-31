@@ -1,6 +1,21 @@
-div {
+.main-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    height: 80%;    
   }
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.main-pic {
+  margin-bottom: 10px;
+}
+
+
+
+  
+
