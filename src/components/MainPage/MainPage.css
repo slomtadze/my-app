@@ -1,16 +1,19 @@
 .main-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height: 80%;    
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
 
-.logo {
-  margin-bottom: 10px;
+.logo,
+.main-pic {
+  margin: 20px 0px;
 }
 
 .main-pic {
-  margin-bottom: 10px;
+  height: 300px;
+  width: auto;
 }

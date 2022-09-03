@@ -1,7 +1,7 @@
 import { Fragment } from "react";
-import Input from "../../Input";
-import Radio from "../../Radio";
-import Select from "../../Select";
+import Input from "../../Inputs/Input";
+import Radio from "../../Inputs/Radio";
+import Select from "../../Inputs/Select";
 
 const Laptop = (props) => {
   return (

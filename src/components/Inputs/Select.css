@@ -16,6 +16,7 @@
 .sm select,
 .md select,
 .lg select {
+  color: #fff;
   border: 1px solid rgb(212, 210, 210);
   border-radius: 5px;
   padding: 5px 20px;

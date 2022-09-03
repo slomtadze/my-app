@@ -1,9 +1,9 @@
 .box-style {
-    display: flex;
-    justify-content: space-around;
-  }
-  .box-style-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-around;
+}
+.box-style-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,17 +1,29 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import ButtonArrow from '../../Button/ButtonArrow'
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import ButtonArrow from "../../Button/ButtonArrow";
 
-import './NavBar.css'
+import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const onLaptotClickHandler = () => {
+    props.onLaptopClick();
+  };
+
+  const onEmployeeClickHandler = () => {
+    props.onEmployeeClick();
+  };
+
   return (
-    <div className='nav'>
-      <ButtonArrow title='<' />
-      <Link to='' className='employee-info'>თანამშრომლის ინფო</Link>
-      <Link to='' className='laptop-info'>ლეპტოპის მახასიათებლები</Link>
+    <div className="nav">
+      <ButtonArrow title="<" />
+      <div className="employee-info" onClick={onEmployeeClickHandler}>
+        თანამშრომლის ინფო
       </div>
-  )
-}
+      <div className="laptop-info" onClick={onLaptotClickHandler}>
+        ლეპტოპის მახასიათებლები
+      </div>
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;
