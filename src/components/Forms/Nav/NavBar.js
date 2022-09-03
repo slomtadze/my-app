@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import ButtonArrow from "../../Button/ButtonArrow";
 
-import "./NavBar.css";
+import styles from "./NavBar.module.css";
 
 const NavBar = (props) => {
   const onLaptotClickHandler = () => {
@@ -14,12 +14,12 @@ const NavBar = (props) => {
   };
 
   return (
-    <div className="nav">
+    <div className={styles.nav}>
       <ButtonArrow title="<" />
-      <div className="employee-info" onClick={onEmployeeClickHandler}>
+      <div className={styles["employee-info"]} onClick={onEmployeeClickHandler}>
         თანამშრომლის ინფო
       </div>
-      <div className="laptop-info" onClick={onLaptotClickHandler}>
+      <div className={styles["laptop-info"]} onClick={onLaptotClickHandler}>
         ლეპტოპის მახასიათებლები
       </div>
     </div>

@@ -3,7 +3,7 @@ import Employee from "../EmployeeForm/Employee";
 import Laptop from "../LaptopForm/Laptop";
 import NavBar from "../Nav/NavBar";
 
-import "./MainForm.css";
+import styles from "./MainForm.module.css";
 
 const MainForm = () => {
   const [laptopIsShown, setLaptopIsShown] = useState(false);
@@ -16,12 +16,12 @@ const MainForm = () => {
     setLaptopIsShown(false);
   };
   return (
-    <div className="basic-form">
+    <div className={styles["basic-form"]}>
       <NavBar
         onLaptopClick={laptopShowHandler}
         onEmployeeClick={employeeShowHandler}
       />
-      <div className="main-box">
+      <div className={styles["main-box"]}>
         {!laptopIsShown && <Employee />}
         {laptopIsShown && <Laptop />}
       </div>

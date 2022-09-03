@@ -1,8 +1,15 @@
-import "./Button.css";
-
+import styles from "./Button.module.css";
 
 const Button = (props) => {
-  return <button className="button-md">{props.title}</button>;
+  const onClickHandler = () => {
+    props.onClick();
+  };
+
+  return (
+    <button onClick={onClickHandler} className={styles["button-md"]}>
+      {props.title}
+    </button>
+  );
 };
 
 export default Button;

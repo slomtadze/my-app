@@ -1,0 +1,11 @@
+.md {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.default {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -2,14 +2,14 @@ import { Fragment } from "react";
 import Input from "../../Inputs/Input";
 import Select from "../../Inputs/Select";
 
-import "./Employee.css";
+import styles from "./Employee.module.css";
 
 const Employee = () => {
   const optionsArray = ["Dog", "Cat", "Hamster"];
   const optionsArray2 = ["Parrot", "Spider", "goldfish"];
   return (
     <Fragment>
-      <div className="box-style">
+      <div className={styles["box-style"]}>
         <Input
           id="name"
           label="სახელი"
@@ -25,11 +25,11 @@ const Employee = () => {
           title="უნდა შეიცავდეს მინ 2 სიმბოლოს"
         />
       </div>
-      <div className="box-style-column">
+      <div className={styles["box-style-column"]}>
         <Select styles="lg" name="თიმი" array={optionsArray} />
         <Select styles="lg" name="პოზიცია" array={optionsArray2} />
       </div>
-      <div className="box-style-column">
+      <div className={styles["box-style-column"]}>
         <Input
           id="name"
           label="სახელი"

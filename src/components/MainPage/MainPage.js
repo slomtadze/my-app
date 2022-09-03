@@ -1,14 +1,25 @@
 import Button from "../Button/Button";
-import "./MainPage.css";
-import logo from './../../source/LOGO-Redberry.png'
-import MainPic from './../../source/MainPic.png'
+import styles from "./MainPage.module.css";
+import logo from "./../../source/LOGO-Redberry.png";
+import MainPic from "./../../source/MainPic.png";
+import { useNavigate } from "react-router-dom";
 
 const MainPage = () => {
+  const navigate = useNavigate();
+
+  const onAddHandler = () => {
+    navigate("/forms");
+  };
+
   return (
-    <div className="main-page">
-      <img className="logo" src={logo} alt='Redberry logo'></img>
-      <img className="main-pic" src={MainPic} alt='Coding pic with lap'></img>
-      <Button title={"ჩანაწერის დამატება"} />
+    <div className={styles["main-page"]}>
+      <img className={styles.logo} src={logo} alt="Redberry logo"></img>
+      <img
+        className={styles["main-pic"]}
+        src={MainPic}
+        alt="Coding pic with lap"
+      ></img>
+      <Button onClick={onAddHandler} title={"ჩანაწერის დამატება"} />
       <Button title={"ჩანაწერების სია"} />
     </div>
   );

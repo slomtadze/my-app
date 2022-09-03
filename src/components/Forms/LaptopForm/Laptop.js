@@ -19,7 +19,7 @@ const Laptop = (props) => {
         <Input styles="sm" />
         <Input styles="sm" />
         <Input styles="md" />
-        <Radio styles="radio" />
+        <Radio styles="md" id="Label" name="Label" />
       </div>
     </Fragment>
   );

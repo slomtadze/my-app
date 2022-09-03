@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import './ButtonArrow.css'
+import styles from "./ButtonArrow.module.css";
 
 const ButtonArrow = (props) => {
-  return (
-    <button className='button-arrow'>{props.title}</button>
-  )
-}
+  return <button className={styles["button-arrow"]}>{props.title}</button>;
+};
 
-export default ButtonArrow
+export default ButtonArrow;
