@@ -1,11 +1,32 @@
 .md {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 5px;
 }
 
 .default {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.md label {
+  margin: 5px 10px 7px 0px;
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  color: blue;
+}
+
+.default input {
+  margin-right: 8px;
 }

@@ -1,6 +1,6 @@
 .box-style {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .box-style-column {
   display: flex;

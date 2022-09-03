@@ -1,0 +1,12 @@
+.box-style,
+.box-style-wrap {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-style-wrap {
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
