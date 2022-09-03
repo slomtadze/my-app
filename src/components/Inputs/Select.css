@@ -1,0 +1,45 @@
+.sm,
+.md,
+.lg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.sm label,
+.md label,
+.lg label {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.sm select,
+.md select,
+.lg select {
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 5px;
+  padding: 5px 20px;
+  outline: none;
+  margin-bottom: 8px;
+  background-color: rgb(167, 165, 165);
+}
+
+.sm select {
+}
+
+.md select {
+  width: 200px;
+  height: 30px;
+}
+
+.lg select {
+  width: 450px;
+  height: 30px;
+}
+
+.sm span,
+.md span,
+.lg span {
+  color: rgb(170, 160, 160);
+  font-size: 10px;
+}

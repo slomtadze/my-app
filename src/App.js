@@ -1,9 +1,9 @@
-import { Fragment } from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Employee from './components/BasicForms/EmployeeForm/Employee';
-import MainForm from './components/BasicForms/MainForm/MainForm';
-import MainPage from './components/MainPage/MainPage';
+import MainPage from './components/MainPage/MainPage'
+import MainForm from './components/Forms/MainForm/MainForm';
+
 
 
 function App() {
