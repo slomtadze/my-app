@@ -7,3 +7,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+.box-style-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}

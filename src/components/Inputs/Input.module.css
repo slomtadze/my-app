@@ -4,19 +4,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 15px;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
 }
 
 .sm label,
 .md label,
 .lg label {
-  margin-bottom: 5px;
-  font-size: 15px;
+  margin-bottom: 0.5em;
+  font-size: 0.7rem;
 }
 .sm input,
 .md input,
 .lg input {
-  border: 1px solid rgb(212, 210, 210);
+  border: 1px solid rgb(158, 152, 240);
   border-radius: 5px;
   padding: 5px 20px;
   outline: none;
@@ -24,7 +25,7 @@
 }
 
 .sm input {
-  width: 200px;
+  width: 150px;
 }
 
 .md input {
@@ -41,5 +42,5 @@
 .md span,
 .lg span {
   color: rgb(170, 160, 160);
-  font-size: 10px;
+  font-size: 0.5rem;
 }

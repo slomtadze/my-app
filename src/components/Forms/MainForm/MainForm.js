@@ -21,10 +21,10 @@ const MainForm = () => {
         onLaptopClick={laptopShowHandler}
         onEmployeeClick={employeeShowHandler}
       />
-      <div className={styles["main-box"]}>
-        {!laptopIsShown && <Employee />}
-        {laptopIsShown && <Laptop />}
-      </div>
+      <form className={styles["main-box"]}>
+        {!laptopIsShown && <Employee onNextBtnClick={laptopShowHandler} />}
+        {laptopIsShown && <Laptop onBackBtnClick={laptopShowHandler} />}
+      </form>
     </div>
   );
 };

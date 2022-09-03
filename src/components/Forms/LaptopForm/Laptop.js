@@ -2,10 +2,16 @@ import { Fragment } from "react";
 import Input from "../../Inputs/Input";
 import Radio from "../../Inputs/Radio";
 import Select from "../../Inputs/Select";
+import Button from "../../Button/Button";
+import ButtonArrow from "../../Button/ButtonArrow";
 
 import styles from "./Laptop.module.css";
 
 const Laptop = (props) => {
+  const btnClickHandler = (e) => {
+    e.preventDefault();
+    props.onBackBtnClick();
+  };
   return (
     <Fragment>
       <div className={styles["box-style"]}>
@@ -17,17 +23,30 @@ const Laptop = (props) => {
         <Select array={[]} styles="md" />
       </div>
       <div className={styles["box-style-wrap"]}>
-        <Select styles="sm" array={[]} />
+        <Select styles="sm" array={[]} label="CPU" title="CPU" />
         <Input styles="sm" label="CPU-ს ბირთვი" title="მხოლოდ ციფრები" />
         <Input styles="sm" label="CPU-ს ნაკადი" title="მხოლოდ ციფრები" />
         <Input styles="md" label="ლეპტოპის RAM (GB)" title="მხოლოდ ციფრები" />
         <Radio styles="md" id="ssd" id2="hdd" title="მეხსიერების ბარათი" />
-        {/*         <Input
+      </div>
+      <div className={styles["box-style-wrap"]}>
+        <Input
           styles="md"
-          type="radio"
-          label="მეხსიერების ბარათი"
-          title="მხოლოდ ციფრები"
-        /> */}
+          type="date"
+          label="შეძენის რიცხვი (არჩევითი)"
+          title="თარიღი"
+        />
+        <Input styles="md" label="ლეპტოპის ფასი" title="მხოლოდ ციფრები" />
+        <Radio
+          styles="md"
+          id="ახალი"
+          id2="მეორადი"
+          title="ლეპტოპის მდგომარეობა"
+        />
+      </div>
+      <div className={styles["box-style"]}>
+        <Button title="უკან" styles="sm" onClick={btnClickHandler} />
+        <Button title="დამახსოვრება" styles="sm" />
       </div>
     </Fragment>
   );

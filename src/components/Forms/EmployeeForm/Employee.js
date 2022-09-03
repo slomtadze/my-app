@@ -1,12 +1,17 @@
 import { Fragment } from "react";
+import Button from "../../Button/Button";
 import Input from "../../Inputs/Input";
 import Select from "../../Inputs/Select";
 
 import styles from "./Employee.module.css";
 
-const Employee = () => {
+const Employee = (props) => {
   const optionsArray = ["Dog", "Cat", "Hamster"];
   const optionsArray2 = ["Parrot", "Spider", "goldfish"];
+
+  const btnClickHandler = () => {
+    props.onNextBtnClick();
+  };
   return (
     <Fragment>
       <div className={styles["box-style"]}>
@@ -44,6 +49,9 @@ const Employee = () => {
           styles="lg"
           title="უნდა შეიცავდეს მინ 2 სიმბოლოს"
         />
+      </div>
+      <div className={styles["box-style-btn"]}>
+        <Button title="შემდეგი" styles="sm" onClick={btnClickHandler} />
       </div>
     </Fragment>
   );

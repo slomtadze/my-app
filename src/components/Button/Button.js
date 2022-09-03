@@ -6,7 +6,7 @@ const Button = (props) => {
   };
 
   return (
-    <button onClick={onClickHandler} className={styles["button-md"]}>
+    <button onClick={onClickHandler} className={styles[props.styles]}>
       {props.title}
     </button>
   );

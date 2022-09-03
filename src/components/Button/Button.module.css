@@ -1,18 +1,34 @@
-  .button-md {
-    width: 250px;
-    height: 40px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    background-color: #62a1eb;
-    color: white;
-    cursor: pointer;
-    transition: 0.2s;
-    border: none;
-  }
-  
-  .button-md:hover {
-    background-color: #317ad0;
-  }
-  .button-md:active {
-    background-color: #1a5dab;
-  }
+.button-md {
+  width: 250px;
+  height: 40px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #62a1eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+
+.button-md:hover {
+  background-color: #317ad0;
+}
+.button-md:active {
+  background-color: #1a5dab;
+}
+
+.sm {
+  width: 110px;
+  border: transparent;
+  background-color: #fff;
+  color: #317ad0;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.sm:hover {
+  color: #fff;
+  background-color: #317ad0;
+}

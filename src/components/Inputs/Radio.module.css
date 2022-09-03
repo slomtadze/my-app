@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -19,14 +19,19 @@ p {
   margin-bottom: 20px;
 }
 
-.md label {
+.md p {
   margin: 5px 10px 7px 0px;
-  font-size: 15px;
+  font-size: 0.5rem;
   font-family: "Helvetica Neue", sans-serif;
   font-size: 10px;
   color: blue;
 }
 
 .default input {
-  margin-right: 8px;
+  margin-right: 3px;
+}
+
+label {
+  font-size: 0.5rem;
+  margin-right: 10px;
 }
