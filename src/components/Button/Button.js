@@ -2,11 +2,15 @@ import styles from "./Button.module.css";
 
 const Button = (props) => {
   const onClickHandler = () => {
-    props.onClick();
+    props.onBtnClick();
   };
 
   return (
-    <button onClick={onClickHandler} className={styles[props.styles]}>
+    <button
+      onClick={onClickHandler}
+      className={styles[props.styles]}
+      type={props.type}
+    >
       {props.title}
     </button>
   );

@@ -51,7 +51,7 @@ const Employee = (props) => {
         />
       </div>
       <div className={styles["box-style-btn"]}>
-        <Button title="შემდეგი" styles="sm" onClick={btnClickHandler} />
+        <Button title="შემდეგი" styles="sm" onBtnClick={btnClickHandler} />
       </div>
     </Fragment>
   );

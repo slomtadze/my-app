@@ -19,8 +19,12 @@ const MainPage = () => {
         src={MainPic}
         alt="Coding pic with lap"
       ></img>
-      <Button onClick={onAddHandler} title={"ჩანაწერის დამატება"} />
-      <Button title={"ჩანაწერების სია"} />
+      <Button
+        onClick={onAddHandler}
+        title={"ჩანაწერის დამატება"}
+        styles="button-md"
+      />
+      <Button title={"ჩანაწერების სია"} styles="button-md" />
     </div>
   );
 };

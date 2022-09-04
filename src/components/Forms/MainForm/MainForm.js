@@ -8,12 +8,18 @@ import styles from "./MainForm.module.css";
 const MainForm = () => {
   const [laptopIsShown, setLaptopIsShown] = useState(false);
 
+  const formSubmitHandler = (e) => {
+    e.preventDefault();
+    console.log("Submit");
+  };
+
   const laptopShowHandler = () => {
     setLaptopIsShown(true);
   };
 
   const employeeShowHandler = () => {
     setLaptopIsShown(false);
+    console.log("back");
   };
   return (
     <div className={styles["basic-form"]}>
@@ -21,9 +27,14 @@ const MainForm = () => {
         onLaptopClick={laptopShowHandler}
         onEmployeeClick={employeeShowHandler}
       />
-      <form className={styles["main-box"]}>
+      <form on onSubmit={formSubmitHandler} className={styles["main-box"]}>
         {!laptopIsShown && <Employee onNextBtnClick={laptopShowHandler} />}
-        {laptopIsShown && <Laptop onBackBtnClick={laptopShowHandler} />}
+        {laptopIsShown && (
+          <Laptop
+            onBackBtnClick={employeeShowHandler}
+            onSubmit={formSubmitHandler}
+          />
+        )}
       </form>
     </div>
   );

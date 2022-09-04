@@ -3,15 +3,16 @@ import Input from "../../Inputs/Input";
 import Radio from "../../Inputs/Radio";
 import Select from "../../Inputs/Select";
 import Button from "../../Button/Button";
-import ButtonArrow from "../../Button/ButtonArrow";
 
 import styles from "./Laptop.module.css";
 
 const Laptop = (props) => {
-  const btnClickHandler = (e) => {
-    e.preventDefault();
+  const btnClickHandler = () => {
+    console.log("Back");
     props.onBackBtnClick();
   };
+
+  const submitClickHandler = () => {};
   return (
     <Fragment>
       <div className={styles["box-style"]}>
@@ -45,8 +46,18 @@ const Laptop = (props) => {
         />
       </div>
       <div className={styles["box-style"]}>
-        <Button title="უკან" styles="sm" onClick={btnClickHandler} />
-        <Button title="დამახსოვრება" styles="sm" />
+        <Button
+          title="უკან"
+          styles="sm"
+          onBtnClick={btnClickHandler}
+          type="button"
+        />
+        <Button
+          title="დამახსოვრება"
+          styles="sm"
+          type="submit"
+          onBtnClick={submitClickHandler}
+        />
       </div>
     </Fragment>
   );
