@@ -3,6 +3,15 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10;
+  width: 600px;
+  position: relative;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 465px;
 }
 
 .employee-info,
@@ -10,30 +19,39 @@
   font-family: "Halvetica Neue";
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 24px;
   color: #232323;
   text-decoration: none;
-  padding-bottom: 30px;
   transition: 0.2s;
   cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 15px;
 }
 
 .employee-info:hover,
 .laptop-info:hover {
   border-bottom: 2px solid #000000;
+  border-color: #317ad0;
 }
 
-.employee-info {
-  letter-spacing: 0.5px;
-  font-family: "Halvetica Neue";
-  width: 223px;
-  height: 24px;
+.button {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 7px;
+  border-radius: 100%;
+  border: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 700px;
+  transition: 0.2s;
 }
-
-.laptop-info {
-  width: 289px;
-  height: 24px;
-  right: 671px;
-  top: 91px;
+.button:hover {
+  color: #fff;
+  background-color: #317ad0;
+}
+.button:active {
+  color: #fff;
+  background-color: #1a5dab;
 }

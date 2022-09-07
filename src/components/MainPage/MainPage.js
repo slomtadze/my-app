@@ -20,7 +20,7 @@ const MainPage = () => {
         alt="Coding pic with lap"
       ></img>
       <Button
-        onClick={onAddHandler}
+        onBtnClick={onAddHandler}
         title={"ჩანაწერის დამატება"}
         styles="button-md"
       />

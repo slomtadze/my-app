@@ -10,7 +10,6 @@ const MainForm = () => {
 
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    console.log("Submit");
   };
 
   const laptopShowHandler = () => {
@@ -19,7 +18,6 @@ const MainForm = () => {
 
   const employeeShowHandler = () => {
     setLaptopIsShown(false);
-    console.log("back");
   };
   return (
     <div className={styles["basic-form"]}>

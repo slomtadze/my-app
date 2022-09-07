@@ -8,7 +8,6 @@ import styles from "./Laptop.module.css";
 
 const Laptop = (props) => {
   const btnClickHandler = () => {
-    console.log("Back");
     props.onBackBtnClick();
   };
 
