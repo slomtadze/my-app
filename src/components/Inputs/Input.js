@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import styles from "./Input.module.css";
 
 const Input = (props) => {

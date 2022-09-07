@@ -1,14 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import styles from "./NavBar.module.css";
 
 const NavBar = (props) => {
+  const navigate = useNavigate();
   const onLaptotClickHandler = () => {
     props.onLaptopClick();
   };
 
   const onEmployeeClickHandler = () => {
     props.onEmployeeClick();
+  };
+
+  const btnClickHandler = () => {
+    if (props.laptopIsShown === true) {
+      onEmployeeClickHandler();
+    } else {
+      navigate("/");
+    }
   };
 
   return (

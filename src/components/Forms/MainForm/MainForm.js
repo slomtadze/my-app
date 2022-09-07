@@ -24,6 +24,7 @@ const MainForm = () => {
       <NavBar
         onLaptopClick={laptopShowHandler}
         onEmployeeClick={employeeShowHandler}
+        laptopIsShown={laptopIsShown}
       />
       <form on onSubmit={formSubmitHandler} className={styles["main-box"]}>
         {!laptopIsShown && <Employee onNextBtnClick={laptopShowHandler} />}
