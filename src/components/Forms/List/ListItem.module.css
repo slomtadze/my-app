@@ -1,0 +1,47 @@
+.basic-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ccc;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.img {
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.credintials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  padding: 2px 0px;
+}
+
+.credintials h1 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.info a:hover,
+.info a:active {
+  color: blue;
+}

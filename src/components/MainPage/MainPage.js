@@ -11,6 +11,10 @@ const MainPage = () => {
     navigate("/forms");
   };
 
+  const onListHandler = () => {
+    navigate("/list");
+  };
+
   return (
     <div className={styles["main-page"]}>
       <img className={styles.logo} src={logo} alt="Redberry logo"></img>
@@ -24,7 +28,11 @@ const MainPage = () => {
         title={"ჩანაწერის დამატება"}
         styles="button-md"
       />
-      <Button title={"ჩანაწერების სია"} styles="button-md" />
+      <Button
+        onBtnClick={onListHandler}
+        title={"ჩანაწერების სია"}
+        styles="button-md"
+      />
     </div>
   );
 };
